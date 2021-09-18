@@ -1,0 +1,11 @@
+function formSetOrNot(c1::Card, c2::Card, c3::Card)
+  return (setHelper1(c1,c2,c3)) || (setHelper2(c1,c2) && setHelper2(c2,c3) && setHelper2(c1,c3))
+end
+
+function setHelper1(c1::Card, c2::Card, c3::Card)
+  return c1.Color == c2.Color == c3.Color || c1.Shape == c2.Shape == c3.Shape || c1.Shading == c2.Shading == c3.Shading ||c1.Number == c2.Number == c3.Number
+end
+
+function setHelper2(c1::Card, c2::Card)
+  return c1.Number !=c2.Number && c1.Color != c2.Color && c1.Shape != c2.Shape && c1.Shading != c2.Shading
+end
