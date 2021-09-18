@@ -2,6 +2,6 @@
 struct Card
   Number
   Color
-  Shape
-  Shading
+  Pattern
+  nPattern
 end
