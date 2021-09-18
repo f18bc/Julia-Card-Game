@@ -4,6 +4,9 @@
 
 You have a total of 81 cards with each 3 types of numbers (like a poker number ), colors, patterns, and number of patterns.
 
+Download all files to the same directory, run playGame.jl to play it!
+
+
 ## Game rules:
 How to form a set: Three cards with one of their fours feature are the same, or all different.
 
